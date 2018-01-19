@@ -27,4 +27,8 @@ function menuItem2() {
   var name = SpreadsheetApp.getActive().getName();
   //Mostramos la variable en el log
   Logger.log('Estás en la hoja llamada '+name);
+  //Obtenemos el nombre de otra hoja con el id
+  var name2 = SpreadsheetApp.openById('1Wjt9BVhgtmt6b2WKMV9uF9VGSRTRRKdBai09Ca3X8yg').getName();
+  //Mostramos la variable en el log
+  Logger.log('Estás en la hoja llamada '+name2);
 }
